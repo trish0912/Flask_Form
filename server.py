@@ -5,7 +5,7 @@ from wtforms.validators import InputRequired
 from werkzeug.security import generate_password_hash
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '@\xbf\xfdW\xdf5aGm\x118\xe4\x0c\xc0n\xb8C||T\xc8\xa2A\x06'
+
 
 class MyForm(FlaskForm):
     name = StringField('Name', validators=[InputRequired()])
